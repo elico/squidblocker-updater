@@ -107,7 +107,7 @@ if [ $UPDATE -eq 1 ]; then
 		echo "Updating the category: $list"
 		if [ -d "$LISTS_PATH/BL/$list" ]; then
 			blacklisturl $USER $PASS $HOST $PORT "$LISTS_PATH/BL/$list/urls"
-			blacklistdom $USER $PASS $HOST $PORT "$LISTS_PATH/BL/$list/doms"
+			blacklistdom $USER $PASS $HOST $PORT "$LISTS_PATH/BL/$list/domains"
 		fi
 	done
 	for list in $WHITELISTS
@@ -115,7 +115,7 @@ if [ $UPDATE -eq 1 ]; then
 		echo "Updating the category: $list"
 		if [ -d "$LISTS_PATH/BL/$list" ]; then
 			whitelisturl $USER $PASS $HOST $PORT "$LISTS_PATH/BL/$list/urls"
-			whitelistdom $USER $PASS $HOST $PORT "$LISTS_PATH/BL/$list/doms"
+			whitelistdom $USER $PASS $HOST $PORT "$LISTS_PATH/BL/$list/domains"
 		fi
 	done
 fi
