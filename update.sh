@@ -2,12 +2,10 @@
 
 USER="admin"
 PASS="hello"
-HOST="192.168.10.65"
+HOST="localhost"
 PORT="8080"
-FILE="./urls"
 
 LISTS_PATH="/var/squidblocker/rawlists/"
-LISTS_PATH="./"
 BLACKLISTS="porn sex/lingerie"
 WHITELISTS=""
 UPDATE=1
